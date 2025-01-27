@@ -7,46 +7,47 @@
   <title>Guilherme Rodrigues</title>
   <link rel="stylesheet" href="style.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
-  <style>
-    @import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap");
-  </style>
   <link rel="shortcut icon" href="assets/logo.ico" />
 </head>
+<header>
+  <nav>
+    <a id="logo">
+      <span>GR</span>
+    </a>
+    <!-- Ícone do menu hambúrguer -->
+    <div class="hamburger" onclick="toggleMenu()">
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
+
+    <!-- Menu de navegação -->
+    <ul class="nav-menu">
+      <li class="active"><a href="index.html">Início</a></li>
+      <li><a href="sobre.html">Sobre mim</a></li>
+      <li><a href="projetos.html">Projetos</a></li>
+      <li><a href="contato.html">Contatos</a></li>
+    </ul>
+    <a href="/assets/Guilherme-Rodrigues.pdf" target="_blank" class="curriculo-button">
+      <button>Baixar Currículo</button>
+    </a>
+  </nav>
+</header>
 
 <body class="container">
-  <header>
-    <nav>
-      <img src="/assets/logo.svg" alt="Logo" />
-      <!-- Ícone do menu hambúrguer -->
-      <div class="hamburger" onclick="toggleMenu()">
-        <div></div>
-        <div></div>
-        <div></div>
+  <div class="profile">
+    <div class="box">
+      <div class="labels">
+        <p id="hello">Olá! </p>
+        <h1 id="eu">Eu sou o Guilherme!</h1>
+        <p id="cargo"></p>
+        <p id="description">
+          Trabalho atualmente no IPEDF como Design UX/UI e Desenvolvedor Front-End Angular. Eu
+          gosto de resolver problemas e projetar soluções que impactam a vida
+          das pessoas.
+        </p>
       </div>
 
-      <!-- Menu de navegação -->
-      <ul class="nav-menu">
-        <li class="active"><a href="index.html">Início</a></li>
-        <li><a href="sobre.html">Sobre mim</a></li>
-        <li><a href="projetos.html">Projetos</a></li>
-        <li><a href="contato.html">Contatos</a></li>
-      </ul>
-      <a href="/assets/Guilherme-Rodrigues.pdf" target="_blank" class="curriculo-button">
-        <button>Baixar Currículo</button>
-      </a>
-    </nav>
-  </header>
-
-  <div class="profile">
-    <div class="labels">
-      <h1 id="hello">Olá! <br>
-        Eu sou o Guilherme!</h1>
-      <p id="cargo"></p>
-      <p id="description">
-        Trabalho atualmente no IPEDF como Desenvolvedor e Design UX/UI. Eu
-        gosto de resolver problemas e projetar soluções que impactam a vida
-        das pessoas.
-      </p>
       <div class="social-buttons">
         <a href="https://www.behance.net/guilhermecrodrigues" class="social-button" aria-label="Behance"
           target="_blank">
@@ -59,9 +60,11 @@
           <i class="fab fa-instagram"></i>
         </a>
       </div>
+
     </div>
 
-    <img id="profile-pic" src="/assets/profile.svg" alt="Logo" />
+    <img id="profile-pic" src="/assets/guilherme.svg" alt="Foto de Guilherme" />
+    
   </div>
 
   <div class="carousel">
@@ -78,7 +81,7 @@
       <i class="fab fa-gitlab" title="GitLab"></i>
     </div>
     <!-- Grupo duplicado para criar o loop infinito -->
-  </br>
+    </br>
     <div aria-hidden="true" class="group">
       <i class="fab fa-figma" title="Figma"></i>
       <i class="fab fa-wordpress" title="WordPress"></i>
@@ -92,30 +95,70 @@
       <i class="fab fa-gitlab" title="GitLab"></i>
     </div>
   </div>
-  
+
 
   <div class="portfolio">
-    <h2>Portfólio</h2>
-    <div class="projects">
+    <h1>Vamos dar uma olhada 👀 <br> nos meus projetos:</h2>
 
-      <!-- Card 1 -->
-      <div class="project-card">
-        <div class="project-image">
-          <img src="/assets/capa-1.png" alt="Project Image">
-        </div>
-        <div class="project-content">
-          <h2>Redesign Questionários</h2>
-          <p>Projeto de redesign da plataforma de questionários open source lime survey</p>
-          <div class="tags">
-            <span>Formulários</span>
-            <span>Website</span>
-            <span>Redesign</span>
+      <div class="projects">
+
+        <!-- Card -->
+        <div class="project-card">
+          <div class="project-image">
+            <img src="/assets/capa-cfc-site.png" alt="Project Image">
           </div>
-          <button class="button-project" onclick="goToProject1()">Ver mais ></button>
+          <div class="project-content">
+            <h2>APP CFC para estudantes</h2>
+            <p>Criação de app conceito para estudantes de Ciências Contábeis</p>
+            <div class="tags">
+              <span>Case de UX/UI</span>
+              <span>APP</span>
+            </div>
+            <a href="/cfc.html">
+              <button class="button-project">Ver mais ></button>
+            </a>
+          </div>
+        </div>
+
+        <!-- Card -->
+        <div class="project-card">
+          <div class="project-image">
+            <img src="/assets/capa-questionario.png" alt="Project Image">
+          </div>
+          <div class="project-content">
+            <h2>Redesign Questionários</h2>
+            <p>Projeto de redesign da plataforma de questionários open source lime survey</p>
+            <div class="tags">
+              <span>Formulários</span>
+              <span>Website</span>
+              <span>Redesign</span>
+            </div>
+            <a href="/limesurvey.html">
+              <button class="button-project">Ver mais ></button>
+            </a>
+          </div>
+        </div>
+
+        <!-- Card-->
+        <div class="project-card">
+          <div class="project-image">
+            <img src="/assets/intranet/capa.png" alt="Project Image">
+          </div>
+          <div class="project-content">
+            <h2>Redesign Intranet IPEDF</h2>
+            <p>Redesign da plataforma open source HumHub para a intranet do IPEDF.</p>
+            <div class="tags">
+              <span>Redesign</span>
+              <span>Case de UX</span>
+            </div>
+            <a href="/intranet.html">
+              <button class="button-project">Ver mais ></button>
+            </a>
+          </div>
         </div>
       </div>
 
-      <!-- Card 2 -->
+      <!-- Card -->
       <div class="project-card">
         <div class="project-image">
           <img src="/assets/capa-innova-home.png" alt="Project Image">
@@ -128,34 +171,17 @@
             <span>Logo</span>
             <span>Design</span>
           </div>
-          <button class="button-project" onclick="">Ver mais ></button>
+          <a href="/emconstrucao.html">
+            <button class="button-project">Ver mais ></button>
+          </a>
         </div>
       </div>
-
-      <!-- Card 3 -->
-      <div class="project-card">
-        <div class="project-image">
-          <img src="/assets/intranet/capa.png" alt="Project Image">
-        </div>
-        <div class="project-content">
-          <h2>Redesign Intranet IPEDF</h2>
-          <p>Redesign da plataforma open source HumHub para a intranet do IPEDF.</p>
-          <div class="tags">
-            <span>Redesign</span>
-            <span>Case de UX</span>
-          </div>
-          <button class="button-project" onclick="goToProject3()">Ver mais ></button>
-        </div>
-      </div>
-
-    </div>
-  
   </div>
-  <script src="script.js"></script>
 
-  <footer>
-    <p class="footer-credits">Criado com ❤️ por Guilherme Rodrigues</p>
-  </footer>
+    <footer>
+      <p class="footer-credits">Criado com ❤️ por Guilherme Rodrigues - 2025</p>
+    </footer>
 </body>
+<script src="script.js"></script>
 
 </html>
