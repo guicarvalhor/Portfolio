@@ -768,10 +768,10 @@ h3 {
 
 /* Estilos para projetos */
 .content {
-  margin-top: 40px;
+  display: flex;
+  flex-direction: column;
   border-radius: 20px;
-  border: #0c4767 solid 1px;
-  padding: 20px;
+  border: #2824f6 solid 1px;
 }
 
 .title {
@@ -823,4 +823,12 @@ h3 {
   to {
     transform: translateX(-50%);
   }
+}
+
+/*ajuste do border-radius das imagens*/
+#top-image{
+ border-radius: 20px 20px 0px 0px;
+}
+#bottom-image{
+  border-radius: 0px 0px 20px 20px;
 }
