@@ -245,7 +245,7 @@ ul li.active a::after {
 /* Estilizando cada ícone */
 .carousel i {
   color: #2824f6;
-  font-size: 36px;
+  font-size: 30px;
   margin: 10px;
   transition: color 0.3s, transform 0.3s;
 }
