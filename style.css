@@ -13,7 +13,7 @@ body {
 }
 
 header {
-  background-color: #2824f6;
+  background-color: #2563EB;
   padding: 10px 16px;
   border-radius: 20px;
 }
@@ -66,7 +66,7 @@ ul li a:hover {
 button {
   background-color: #fff;
   border: none;
-  color: #2824f6;
+  color: #2563EB;
   padding: 10px 20px;
   border-radius: 12px;
   cursor: pointer;
@@ -105,7 +105,7 @@ ul li.active a::after {
 }
 
 .box {
-  background-color: #2824f6;
+  background-color: #2563EB;
   color: #fff;
   border-radius: 45px;
 }
@@ -161,14 +161,14 @@ ul li.active a::after {
   border-radius: 50%;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   text-decoration: none;
-  color: #2824f6;
+  color: #2563EB;
   font-size: 24px;
   transition: background-color 0.3s, color 0.3s;
 }
 
 .social-button:hover {
   background-color: #f0f0f0;
-  color: #2824f6;
+  color: #2563EB;
 }
 
 #description {
@@ -244,7 +244,7 @@ ul li.active a::after {
 
 /* Estilizando cada ícone */
 .carousel i {
-  color: #2824f6;
+  color: #2563EB;
   font-size: 30px;
   margin: 10px;
   transition: color 0.3s, transform 0.3s;
@@ -418,7 +418,7 @@ button:hover {
 /* Estilos do botão */
 .back-button {
   display: inline-block;
-  background-color: #2824f6;
+  background-color: #2563EB;
   color: #fff;
   padding: 10px 20px;
   text-decoration: none;
@@ -487,7 +487,7 @@ button:hover {
     position: absolute;
     top: 0px;
     left: 0;
-    background-color: #2824f6;
+    background-color: #2563EB;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   }
 
@@ -530,7 +530,7 @@ button:hover {
   margin: 60px 0;
   text-align: center;
   border-radius: 20px;
-  border: #2824f6 solid 1px;
+  border: #2563EB solid 1px;
   padding: 20px;
 }
 
@@ -553,12 +553,12 @@ button:hover {
   padding: 20px;
   width: 26%;
   background-color: #e7edf0;
-  color: #2824f6;
+  color: #2563EB;
 }
 
 .icon-card {
   height: 40px;
-  color: #2824f6;
+  color: #2563EB;
   background: #5c8499;
   padding: 10px;
   border-radius: 12px;
@@ -575,11 +575,11 @@ h3 {
 }
 
 .form-content p {
-  color: #2824f6;
+  color: #2563EB;
 }
 
 .resume {
-  color: #2824f6;
+  color: #2563EB;
   background: #e7edf0;
   text-align: justify;
   margin: 20px 0;
@@ -629,7 +629,7 @@ h3 {
 }
 
 .projeto-info {
-  background-color: #2824f6;
+  background-color: #2563EB;
   color: white;
   padding: 20px;
   text-align: left;
@@ -771,7 +771,7 @@ h3 {
   display: flex;
   flex-direction: column;
   border-radius: 20px;
-  border: #2824f6 solid 1px;
+  border: #2563EB solid 1px;
 }
 
 .title {
