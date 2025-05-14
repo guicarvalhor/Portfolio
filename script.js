@@ -36,3 +36,33 @@ function toggleMenu() {
   }
 
   type(); // Inicia a função de digitação
+
+  //fechar o menu quando clicar fora ou em um link
+  function toggleMenu() {
+    const navMenu = document.querySelector(".nav-menu");
+    navMenu.classList.toggle("active");
+  
+    const hamburger = document.querySelector(".hamburger");
+    hamburger.classList.toggle("active");
+  
+    const closeIcon = document.querySelector(".close-icon");
+    if (hamburger.classList.contains("active")) {
+      closeIcon.style.display = "block";
+    } else {
+      closeIcon.style.display = "none";
+    }
+  }
+  
+  // Fecha o menu ao clicar em um item do menu
+  document.querySelectorAll('.nav-menu a').forEach(item => {
+    item.addEventListener('click', () => {
+      const navMenu = document.querySelector(".nav-menu");
+      const hamburger = document.querySelector(".hamburger");
+      const closeIcon = document.querySelector(".close-icon");
+  
+      navMenu.classList.remove("active");
+      hamburger.classList.remove("active");
+      closeIcon.style.display = "none";
+    });
+  });
+  
