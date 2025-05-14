@@ -12,7 +12,7 @@
 <header>
   <nav>
     <a id="logo">
-      <span>GR</span>
+      <span>GR.</span>
     </a>
     <!-- Ícone do menu hambúrguer -->
     <div class="hamburger" onclick="toggleMenu()">
@@ -38,12 +38,11 @@
   <div class="profile">
     <div class="box">
       <div class="labels">
-        <p id="hello">Olá! </p>
-        <h1 id="eu">Eu sou o Guilherme!</h1>
-        <p id="cargo"></p>
+        <p id="hello">Transformando ideias </p>
+        <p id="blue">em experiências digitais </p>
+        
         <p id="description">
-          Trabalho atualmente no IPEDF como Design UX/UI e Dev Front-End. Gosto de resolver problemas e projetar soluções que impactam a vida
-          das pessoas.
+          Olá, eu sou o Guilherme, boas vindas ao meu mundo. Eu crio sites misturando criatividade, velocidade e uma experiência do usuário perfeita.
         </p>
       </div>
 
@@ -59,105 +58,144 @@
           <i class="fab fa-instagram"></i>
         </a>
       </div>
-
     </div>
 
-    <img id="profile-pic" src="/assets/guilherme.svg" alt="Foto de Guilherme" />
-    
-  </div>
-
-  <div class="carousel">
-    <div class="group">
-      <i class="fab fa-figma" title="Figma"></i>
-      <i class="fab fa-wordpress" title="WordPress"></i>
-      <i class="fab fa-html5" title="HTML5"></i>
-      <i class="fab fa-css3-alt" title="CSS3"></i>
-      <i class="fab fa-sass" title="Sass"></i>
-      <i class="fab fa-js-square" title="JavaScript"></i>
-      <i class="fab fa-angular" title="Angular"></i>
-      <i class="fab fa-bootstrap" title="Bootstrap"></i>
-      <i class="fab fa-git" title="Git"></i>
-      <i class="fab fa-gitlab" title="GitLab"></i>
-    </div>
-    <!-- Grupo duplicado para criar o loop infinito -->
-    </br>
-    <div aria-hidden="true" class="group">
-      <i class="fab fa-figma" title="Figma"></i>
-      <i class="fab fa-wordpress" title="WordPress"></i>
-      <i class="fab fa-html5" title="HTML5"></i>
-      <i class="fab fa-css3-alt" title="CSS3"></i>
-      <i class="fab fa-sass" title="Sass"></i>
-      <i class="fab fa-js-square" title="JavaScript"></i>
-      <i class="fab fa-angular" title="Angular"></i>
-      <i class="fab fa-bootstrap" title="Bootstrap"></i>
-      <i class="fab fa-git" title="Git"></i>
-      <i class="fab fa-gitlab" title="GitLab"></i>
+    <div class="profile-pic">
+      <img id="profile-pic" src="/assets/foto.png" alt="Foto de Guilherme" />
+      <div class="textos">
+        <p id="nome"><b>Guilherme Rodrigues</b></p>
+        <p id="cargo"></p>
+      </div>
     </div>
   </div>
 
 
   <div class="portfolio">
-    <h1>Vamos dar uma olhada 👀 <br> nos meus projetos:</h2>
+    <p id="titulo">Explore </p>
+    <p id="titulo">meus últimos projetos</p>
+    <p id="sub-titulo">Esses projetos demonstram meu comprometimento em criar experiências digitais únicas e de alto desempenho, adaptadas a cada necessidade.</p>
 
       <div class="projects">
 
         <!-- Card -->
+        
         <div class="project-card">
+          <a href="/cfc.html">
           <div class="project-image">
             <img src="/assets/capas-home/cfc.png" alt="Project Image">
           </div>
           <div class="project-content">
             <h2>APP CFC para estudantes</h2>
             <p>Criação de app conceito para estudantes de Ciências Contábeis</p>
-            <div class="tags">
-              <span>Case de UX/UI</span>
-              <span>APP</span>
-            </div>
-            <a href="/cfc.html">
-              <button class="button-project">Ver mais ></button>
-            </a>
           </div>
+        </a>
         </div>
-
+        
         <!-- Card -->
         <div class="project-card">
+          <a href="/maxfit.html">
+          <div class="project-image">
+            <img src="/assets/capas-home/limesurvey.png" alt="Project Image">
+          </div>
+          <div class="project-content">
+            <h2>Max Fit</h2>
+            <p>Proposta de site para divulgação de App e captação de leads</p>
+          </div>
+         </a>
+        </div>
+      
+        <!-- Card --> 
+         
+        <div class="project-card">
+          <a href="/limesurvey.html">
           <div class="project-image">
             <img src="/assets/capas-home/limesurvey.png" alt="Project Image">
           </div>
           <div class="project-content">
             <h2>Redesign Questionários</h2>
             <p>Projeto de redesign da plataforma de questionários open source lime survey</p>
-            <div class="tags">
-              <span>Formulários</span>
-              <span>Website</span>
-              <span>Redesign</span>
-            </div>
-            <a href="/limesurvey.html">
-              <button class="button-project">Ver mais ></button>
-            </a>
           </div>
+        </a>
         </div>
+       
 
         <!-- Card-->
-        <div class="project-card">
+        <div class="project-card"> 
+          <a href="/intranet.html">
           <div class="project-image">
             <img src="/assets/capas-home/intranet.png" alt="Project Image">
           </div>
           <div class="project-content">
             <h2>Redesign Intranet IPEDF</h2>
             <p>Redesign da plataforma open source HumHub para a intranet do IPEDF.</p>
-            <div class="tags">
-              <span>Redesign</span>
-              <span>Case de UX</span>
-            </div>
-            <a href="/intranet.html">
-              <button class="button-project">Ver mais ></button>
-            </a>
           </div>
+        </a>
         </div>
+      
+  </div>
+
+   <!--Minhas experiências-->
+  <div class="experiencias">
+    <p id="titulo">Minhas experiências</p>
+    <p id="sub-titulo">Conheça um pouco sobre o que eu tenho feito nos últimos anos.</p>
     
+    <div class="grid">
+      <div class="card">
+        <div class="icon"><i class="fas fa-laptop-code"></i></div>
+        <div class="card-title">UI/UX Design</div>
+        <div class="card-desc">
+          Criando interfaces centradas no usuário, visualmente impressionantes e altamente intuitivas que envolvam profundamente e repercutam no público.
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="icon"><i class="fas fa-network-wired"></i></div>
+        <div class="card-title">Web Design</div>
+        <div class="card-desc">
+          Criação de sites e sistemas para empresas.
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="icon"><i class="fas fa-cubes"></i></div>
+        <div class="card-title">Product Design</div>
+        <div class="card-desc">
+          Processo de design abrangente de ponta a ponta, desde a ideação inicial e wireframing até a prototipagem interativa e testes de usabilidade.
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="icon"><i class="fas fa-question-circle"></i></div>
+        <div class="card-title">Consultoria de Design</div>
+        <div class="card-desc">
+          Fornecer consultoria especializada em design para qualquer profissional de produto digital garantindo experiências de usuário.
+        </div>
+      </div>
+    </div>
+  </div>
+
+   <!-- Contato -->
+   <div class="wrapper">
+    <div class="content">
+      <div class="text-area">
+        <h1>Vamos agendar uma <span>conversa</span>?</h1>
+        <p>Vamos transformar suas ideias em experiências digitais impressionantes com criatividade e precisão.</p>
+        <a href="#contato" class="btn">Entrar em contato</a>
+      </div>
+      <div class="image-area">
+        <img src="/assets/foto2.png" alt="Foto de perfil" />
+        <!-- Substitua acima pela sua imagem -->
+      </div>
+    </div>
+    <div class="footer">
+      <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+      <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+      <a href="#" aria-label="Behance"><i class="fab fa-behance"></i></a>
+      <a href="#" aria-label="Dribbble"><i class="fab fa-dribbble"></i></a>
+    </div>
   </div>
 </div>
+
     <footer>
       <p class="footer-credits">Criado com ❤️ por Guilherme Rodrigues - 2025</p>
     </footer>
