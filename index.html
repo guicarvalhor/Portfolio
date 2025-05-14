@@ -8,10 +8,13 @@
   <link rel="stylesheet" href="style.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
   <link rel="shortcut icon" href="assets/logo.ico" />
+  <!-- CSS do AOS -->
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
 </head>
+
 <header>
-  <nav>
-    <a id="logo">
+  <nav data-aos="fade-up" data-aos-delay="300" data-aos-duration="1000">
+    <a id="logo" href="index.html">
       <span>GR.</span>
     </a>
     <!-- Ícone do menu hambúrguer -->
@@ -23,19 +26,22 @@
 
     <!-- Menu de navegação -->
     <ul class="nav-menu">
+      <!-- Ícone de Fechar (X) -->
+      <li class="close-menu" onclick="toggleMenu()"><i class="fab fa-solid fa-rectangle-xmark"></i></li>
       <li class="active"><a href="index.html">Início</a></li>
-      <li><a href="sobre.html">Sobre mim</a></li>
-      <li><a href="projetos.html">Projetos</a></li>
-      <li><a href="contato.html">Contatos</a></li>
+      <li><a href="#sobre">Sobre mim</a></li>
+      <li><a href="#portfolio">Projetos</a></li>
+      <li><a href="#contato">Contatos</a></li>
+      
     </ul>
-    <a href="/assets/curriculo/Guilherme-Rodrigues.pdf" target="_blank" class="curriculo-button">
+    <a href="/assets/curriculo/Guilherme-Carvalho-Rodrigues-cv.pdf" target="_blank" class="curriculo-button">
       <button>Baixar Currículo</button>
     </a>
   </nav>
 </header>
 
-<body class="container">
-  <div class="profile">
+<body class="container" >
+  <div class="profile" data-aos="fade-up" data-aos-delay="500" data-aos-duration="1000">
     <div class="box">
       <div class="labels">
         <p id="hello">Transformando ideias </p>
@@ -70,9 +76,9 @@
   </div>
 
 
-  <div class="portfolio">
+  <div class="portfolio" id="portfolio" data-aos="fade-up" data-aos-delay="700" data-aos-duration="1000">
     <p id="titulo">Explore </p>
-    <p id="titulo">meus últimos projetos</p>
+    <p id="titulo">meus últimos <span id="blue">projetos</span></p>
     <p id="sub-titulo">Esses projetos demonstram meu comprometimento em criar experiências digitais únicas e de alto desempenho, adaptadas a cada necessidade.</p>
 
       <div class="projects">
@@ -95,7 +101,7 @@
         <div class="project-card">
           <a href="/maxfit.html">
           <div class="project-image">
-            <img src="/assets/capas-home/limesurvey.png" alt="Project Image">
+            <img src="/assets/capas-home/capa-maxfit.png" alt="Project Image">
           </div>
           <div class="project-content">
             <h2>Max Fit</h2>
@@ -135,7 +141,7 @@
   </div>
 
    <!--Minhas experiências-->
-  <div class="experiencias">
+  <div class="experiencias" data-aos="fade-up" data-aos-duration="1000">
     <p id="titulo">Minhas experiências</p>
     <p id="sub-titulo">Conheça um pouco sobre o que eu tenho feito nos últimos anos.</p>
     
@@ -165,7 +171,7 @@
       </div>
 
       <div class="card">
-        <div class="icon"><i class="fas fa-question-circle"></i></div>
+        <div class="icon"><i class="fas fa-user-tie"></i></div>
         <div class="card-title">Consultoria de Design</div>
         <div class="card-desc">
           Fornecer consultoria especializada em design para qualquer profissional de produto digital garantindo experiências de usuário.
@@ -174,31 +180,105 @@
     </div>
   </div>
 
+  <!-- Sobre mim -->
+  <div class="sobre" id="sobre" data-aos="fade-up" data-aos-duration="1000">
+    <section class="card-job" >
+      <h2 class="section-title">Formação Acadêmica</h2>
+      <div class="timeline">
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <h3>Design Gráfico e Digital</h3>
+            <p>Segunda Graduação – FAM (2025)</p>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <h3>Desenvolvimento de Aplicativos Multiplataforma</h3>
+            <p>Pós-Graduação – Descomplica (2023)</p>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <h3>Computação</h3>
+            <p>Graduação – IFB (2016–2021)</p>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <h3>Técnico em Informática</h3>
+            <p>Ensino Médio – IFPI (2012–2016)</p>
+          </div>
+        </div>
+      </div>
+    
+      <h2 class="section-title">Resumo Profissional</h2>
+      <div class="resume-text">
+        <p>Designer UX/UI atuando na Postalis, onde colaboro com squads ágeis utilizando metodologias Scrum para desenvolver soluções centradas no usuário. Participo ativamente de todas as etapas do processo de design: desde a pesquisa com usuários até a entrega (handoff) para o time de desenvolvimento.</p>
+        <p>Utilizo o Figma como principal ferramenta para criação de fluxos, wireframes, protótipos de alta fidelidade e documentação de componentes, garantindo consistência visual e eficiência na comunicação com desenvolvedores.</p>
+        <p>No IPEDF, atuei na criação e redesign de interfaces para sistemas institucionais como LimeSurvey, GeoNode e o Anuário Estatístico do DF. Também contribuí para o desenvolvimento do Sistema de Design da instituição, criando e validando componentes no Figma e Storybook.</p>
+        <p>Tenho um perfil colaborativo e foco em boas práticas de usabilidade, acessibilidade e design escalável, sempre alinhado à visão do produto e às necessidades reais dos usuários.</p>
+      </div>
+      
+    
+      <h2 class="section-title">Histórico Profissional</h2>
+      <div class="jobs">
+        <div class="job-card">
+          <h3>Designer UX/UI Sênior | Postalis Previdência</h3>
+          <p><i>02/2025 - Atual</i></p>
+        </div>
+        <div class="job-card">
+          <h3>Design UX/UI Pleno | IPEDF</h3>
+          <p><i>01/2024 - 02/2025</i></p>
+        </div>
+        <div class="job-card">
+          <h3>Professor de Robótica e Programação | Colégio Objetivo</h3>
+          <p><i>2021 - 2023</i></p>
+        </div>
+        <div class="job-card">
+          <h3>Assistente de Comunicação | Sesi/Unesco</h3>
+          <p><i>2019 - 2021</i></p>
+        </div>
+        <div class="job-card">
+          <h3>Estagiário | IBGE</h3>
+          <p><i>2018</i></p>
+        </div>
+      </div>
+    </section>
+</div>
    <!-- Contato -->
-   <div class="wrapper">
+   <div class="wrapper" id="contato" data-aos="fade-up" data-aos-duration="1000"> 
     <div class="content">
       <div class="text-area">
-        <h1>Vamos agendar uma <span>conversa</span>?</h1>
+        <p id="titulo">Vamos agendar uma <span id="blue">conversa</span>?</h1>
         <p>Vamos transformar suas ideias em experiências digitais impressionantes com criatividade e precisão.</p>
-        <a href="#contato" class="btn">Entrar em contato</a>
+        <a href="http://wa.me/+5561999467864" target="_blank" class="btn">Entrar em contato</a>
       </div>
       <div class="image-area">
         <img src="/assets/foto2.png" alt="Foto de perfil" />
-        <!-- Substitua acima pela sua imagem -->
       </div>
     </div>
     <div class="footer">
-      <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
-      <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
-      <a href="#" aria-label="Behance"><i class="fab fa-behance"></i></a>
-      <a href="#" aria-label="Dribbble"><i class="fab fa-dribbble"></i></a>
+      <a href="https://www.instagram.com/guidesignr" aria-label="Instagram" target="_blank"><i class="fab fa-instagram"></i></a>
+      <a href="https://www.linkedin.com/in/guilherme-cr/" aria-label="Linkedin" target="_blank"><i class="fab fa-linkedin"></i></a>
+      <a href="https://www.behance.net/guilhermecrodrigues" aria-label="Behance" target="_blank"><i class="fab fa-behance"></i></a>
     </div>
   </div>
-</div>
+
 
     <footer>
       <p class="footer-credits">Criado com ❤️ por Guilherme Rodrigues - 2025</p>
     </footer>
+
+    <!-- JS do AOS -->
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
+
 </body>
 <script src="script.js"></script>
 </html>
