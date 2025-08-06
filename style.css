@@ -272,7 +272,7 @@ ul li.active a::after {
 /* Estilizando a div do portfólio */
 .portfolio,
 .experiencias {
-  margin-top: 30px;
+  margin-top: 80px;
 }
 
 .projects {
@@ -282,7 +282,6 @@ ul li.active a::after {
   flex-wrap: wrap;
   gap: 20px;
 }
-
 /* Estilos do cartão do projeto */
 .project-card {
   background-color: var(--bg-secundary); /* Fundo secundário escuro */
@@ -294,33 +293,51 @@ ul li.active a::after {
   margin-top: 20px;
   transition: transform 0.3s ease-in-out;
   flex-grow: 1;
+  cursor: pointer;
 }
 
 .project-card:hover {
   transform: translateY(-10px);
 }
 
+.project-image {
+  overflow: hidden;
+  border-radius: 12px;
+}
+
 .project-image img {
   width: 100%;
   border-radius: 12px;
+  height: auto;
+  display: block;
+  transition: transform 0.6s ease;
+  transform-origin: center center;
 }
 
 .project-content {
   padding: 20px 0 0;
+  transition: transform 0.6s ease;
 }
 
 .project-content h2 {
   font-size: 24px;
   margin-bottom: 10px;
-  color: var(--text-primary); /* Ajustado para texto claro */
+  color: var(--text-primary); /* Texto principal */
   font-weight: 400;
 }
 
 .project-content p {
   font-size: 16px;
-  color: var(--text-secondary); /* Ajustado para texto secundário claro */
+  color: var(--text-secondary); /* Texto secundário */
   margin-bottom: 20px;
+  transition: transform 0.6s ease, opacity 0.6s ease;
 }
+
+/* Efeitos de hover */
+.project-card:hover .project-image img {
+  transform: scale(1.08);
+}
+
 
 /* Conteúdo da página de construção */
 .construction-container {
@@ -808,4 +825,80 @@ ul li.active a::after {
   justify-content: space-between;
   font-size: 14px;
   color: var(--text-secondary); /* Meta informações do cargo secundárias claras */
+}
+
+/* ajustes dos cases*/
+.case-page {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 2rem;
+  color: var(--blue-color);
+  font-family: 'Inter', sans-serif;
+}
+
+.case-header h1 {
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.case-meta p {
+  margin: 0;
+  font-size: 0.9rem;
+  opacity: 0.7;
+}
+
+.case-cover img {
+  width: 100%;
+  border-radius: 8px;
+  margin: 2rem 0;
+}
+
+.case-section {
+  margin-bottom: 3rem;
+}
+
+.case-section h2 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.case-img-text {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.case-img-text img {
+  width: 100%;
+  border-radius: 8px;
+}
+
+.company-history {
+  display: flex;
+  align-items: flex-start;
+  gap: 1.5rem;
+}
+
+.logo-box img {
+  width: 80px;
+  height: 80px;
+  object-fit: contain;
+  border-radius: 10px;
+  padding: 0.5rem;
+}
+
+.company-text h3 {
+  margin: 0 0 0.5rem;
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+  .company-history {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  .logo-box img {
+    margin-bottom: 1rem;
+  }
 }
