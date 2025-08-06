@@ -740,7 +740,7 @@ ul li.active a::after {
 }
 
 .footer a {
-  color: var(--text-primary); /* Ícones do footer claros */
+  color: var(--bg); /* Ícones do footer claros */
   font-size: 1.8rem;
   margin-left: 12px;
   text-decoration: none;
@@ -808,8 +808,4 @@ ul li.active a::after {
   justify-content: space-between;
   font-size: 14px;
   color: var(--text-secondary); /* Meta informações do cargo secundárias claras */
-}
-
-.fab{
-  color: #fff
 }
