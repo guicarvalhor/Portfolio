@@ -5,25 +5,25 @@
   font-family: "Inter", sans-serif;
 }
 :root {
-  --bg: #f5f5f5;
-  --bg-secundary: #fff;
-  --bg-dark: #1e1e1e;
-  --border-dark: #333333;
-  --blue-color: #3563eb;
-  --blue-accent: #007bff;
-  --text-primary: #18171e;
-  --text-secondary: #818898;
+    --bg: #f5f5f5;
+    --bg-secundary: #fff;
+    --bg-dark: #1e1e1e;
+    --border-dark: #333333;
+    --blue-color: #3563eb;
+    --blue-accent: #007bff;
+    --text-primary: #18171e;
+    --text-secondary: #818898;
   --transition: all 0.3s ease;
 }
 html {
   scroll-behavior: smooth;
 }
+
 body {
   background-color: var(--bg);
   color: var(--text-primary);
-  padding-top: 60px;
-  display: flex;
-  flex-direction: column;
+  /* display: flex;
+  flex-direction: column; */
 }
 a {
   text-decoration: none;
@@ -32,7 +32,8 @@ a {
 
 header {
   padding: 10px 0px;
-  z-index: 10;
+  z-index: 1000;
+  background-color: var(--bg);
 }
 
 /* Criando o espaçamento do body */
@@ -65,7 +66,7 @@ ul li {
 }
 
 ul li a {
-  color: #2a2a2a;
+  color: var(--text-primary); /* Ajustado para texto claro */
   text-decoration: none;
   font-size: 16px;
   transition: color 0.3s;
@@ -73,6 +74,7 @@ ul li a {
 
 ul li a:hover {
   font-weight: 600;
+  color: var(--blue-color); /* Mantém o hover azul */
 }
 
 #logo {
@@ -101,6 +103,7 @@ button:hover {
 ul li.active a {
   font-weight: bold;
   position: relative;
+  color: var(--blue-color); /* Cor do link ativo */
 }
 
 /* Adicionando a bolinha embaixo do item ativo */
@@ -113,7 +116,7 @@ ul li.active a::after {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background-color: #fff;
+  background-color: var(--blue-color); /* Cor da bolinha ativa */
 }
 
 .profile {
@@ -123,7 +126,7 @@ ul li.active a::after {
 }
 
 .box {
-  background-color: var(--bg-secundary);
+  background-color: var(--bg-secundary); /* Fundo secundário escuro */
   color: var(--text-primary);
   border-radius: 20px;
 }
@@ -137,7 +140,7 @@ ul li.active a::after {
 }
 
 .profile-pic {
-  background-color: var(--bg-secundary);
+  background-color: var(--bg-secundary); /* Fundo secundário escuro */
   border-radius: 20px;
   padding: 20px;
 }
@@ -164,6 +167,7 @@ ul li.active a::after {
   font-style: normal;
   font-weight: 500;
   line-height: normal;
+  color: var(--text-primary); /* Ajustado para texto claro */
 }
 
 #blue {
@@ -180,6 +184,7 @@ ul li.active a::after {
   font-weight: 400;
   line-height: 30px;
   margin-top: 20px;
+  color: var(--text-secondary); /* Ajustado para texto secundário claro */
 }
 
 /* Estilizando o contêiner dos botões */
@@ -188,7 +193,7 @@ ul li.active a::after {
   gap: 15px;
   justify-content: start;
   padding: 0rem 3rem 3rem 3rem;
-  background-color: var(--card-dark);
+  background-color: var(--bg-secundary); /* Fundo secundário escuro */
   border-radius: 0.5rem;
 }
 
@@ -200,14 +205,14 @@ ul li.active a::after {
   width: 50px;
   height: 50px;
   text-decoration: none;
-  color: #2563eb;
+  color: var(--blue-color); /* Ícones sociais em azul */
   font-size: 24px;
   transition: background-color 0.3s, color 0.3s;
 }
 
 .social-button:hover {
-  background-color: #f0f0f0;
-  color: #2563eb;
+  background-color: #333333; /* Fundo mais escuro no hover */
+  color: var(--blue-color);
   border-radius: 0.5rem;
 }
 
@@ -223,6 +228,7 @@ ul li.active a::after {
   font-style: normal;
   font-weight: 500;
   line-height: normal;
+  color: var(--text-primary); /* Ajustado para texto claro */
 }
 
 #sub-titulo {
@@ -232,12 +238,13 @@ ul li.active a::after {
   line-height: 40px;
   margin-top: 1rem;
   letter-spacing: -0.02rem;
+  color: var(--text-secondary); /* Ajustado para texto secundário claro */
 }
 
 /* Estilizando o conteúdo de texto */
 .text-content {
   text-align: left;
-  color: #fff;
+  color: var(--text-primary); /* Ajustado para texto claro */
   width: 100%;
 }
 
@@ -248,6 +255,7 @@ ul li.active a::after {
   line-height: 26.36px;
   letter-spacing: 0.02px;
   word-wrap: break-word;
+  color: var(--text-primary); /* Ajustado para texto claro */
 }
 
 /* Estilizando a descrição */
@@ -258,6 +266,7 @@ ul li.active a::after {
   letter-spacing: 0.07px;
   word-wrap: break-word;
   margin-top: 20px;
+  color: var(--text-secondary); /* Ajustado para texto secundário claro */
 }
 
 /* Estilizando a div do portfólio */
@@ -276,7 +285,7 @@ ul li.active a::after {
 
 /* Estilos do cartão do projeto */
 .project-card {
-  background-color: var(--bg-secundary);
+  background-color: var(--bg-secundary); /* Fundo secundário escuro */
   border-radius: 1rem;
   width: 400px;
   overflow: hidden;
@@ -303,13 +312,13 @@ ul li.active a::after {
 .project-content h2 {
   font-size: 24px;
   margin-bottom: 10px;
-  color: var(--text-primary);
+  color: var(--text-primary); /* Ajustado para texto claro */
   font-weight: 400;
 }
 
 .project-content p {
   font-size: 16px;
-  color: var(--text-secondary);
+  color: var(--text-secondary); /* Ajustado para texto secundário claro */
   margin-bottom: 20px;
 }
 
@@ -326,13 +335,13 @@ ul li.active a::after {
 
 .construction-content h1 {
   font-size: 36px;
-  color: #333;
+  color: var(--text-primary); /* Ajustado para texto claro */
   margin-bottom: 10px;
 }
 
 .construction-content p {
   font-size: 18px;
-  color: #555;
+  color: var(--text-secondary); /* Ajustado para texto secundário claro */
   margin-bottom: 20px;
 }
 
@@ -373,7 +382,7 @@ ul li.active a::after {
 .hamburger div {
   width: 100%;
   height: 5px;
-  background-color: var(--blue-color);
+  background-color: var(--blue-color); /* Cor do hambúrguer */
   border-radius: 3px;
 }
 
@@ -383,6 +392,10 @@ ul li.active a::after {
   list-style: none;
   margin: 0;
   padding: 0;
+  backdrop-filter: brightness(60%);
+  padding: 20px 10px;
+  border-radius: 2rem;
+  background-color: var(--bg-secundary);
 }
 
 .nav-menu li {
@@ -393,10 +406,14 @@ ul li.active a::after {
   text-decoration: none;
   color: var(--text-primary);
 }
+.nav-menu a:hover {
+  color: var(--blue-color); /* Cor do link no hover */
+}
+
 /* Ícone de Fechar (X) - esconder no desktop */
 .nav-menu .close-menu {
   font-size: 2rem;
-  color: white;
+  color: var(--text-primary); /* Cor do X no menu mobile */
   cursor: pointer;
   text-align: right;
   display: none; /* Escondido por padrão */
@@ -424,12 +441,12 @@ ul li.active a::after {
     height: 100vh;
     position: absolute;
     top: 0px;
-    background-color: #2563eb;
+    background-color: var(--bg-dark); /* Fundo do menu mobile escuro */
     z-index: 999;
   }
 
   .nav-menu a {
-    color: var(--bg-secundary);
+    color: var(--text-primary); /* Links do menu mobile claros */
     font-size: 26px;
   }
 
@@ -495,7 +512,8 @@ ul li.active a::after {
   text-align: center;
   border-radius: 20px;
   padding: 20px;
-  background-color: var(--bg-secundary);
+  background-color: var(--blue-color); /* Fundo secundário escuro */
+  color: var(--bg); /* Texto do footer claro */
 }
 
 /*página de projetos internos*/
@@ -505,14 +523,14 @@ ul li.active a::after {
   justify-content: center;
   align-items: center;
   width: 100%;
-  background-color: var(--bg-secundary);
+  background-color: var(--bg-secundary); /* Fundo secundário escuro */
   border-radius: 1rem;
   margin-top: 40px;
 }
 
 .conteudo h2 {
   font-size: 3rem;
-  color: #333;
+  color: var(--text-primary); /* Títulos de conteúdo claros */
   margin: 60px 0px;
   text-align: center;
   width: 100%;
@@ -527,14 +545,14 @@ ul li.active a::after {
 
 .section-title {
   font-size: 1.8rem;
-  color: #222;
+  color: var(--text-primary); /* Títulos de seção claros */
   padding: 0px 0px 30px 0px;
 }
 
 .timeline {
   position: relative;
   margin-left: 20px;
-  border-left: 2px solid #4e73df;
+  border-left: 2px solid var(--blue-color); /* Linha do tempo azul */
   padding-left: 20px;
   margin-bottom: 40px;
 }
@@ -547,7 +565,7 @@ ul li.active a::after {
 .timeline-dot {
   width: 14px;
   height: 14px;
-  background-color: #4e73df;
+  background-color: var(--blue-color); /* Bolinha da timeline azul */
   border-radius: 50%;
   position: absolute;
   left: -29px;
@@ -557,19 +575,20 @@ ul li.active a::after {
 .timeline-content h3 {
   font-size: 1.1rem;
   margin-bottom: 5px;
-  color: #1f1f1f;
+  color: var(--text-primary); /* Texto da timeline claro */
 }
 
 .timeline-content p {
   font-size: 0.95rem;
-  color: #555;
+  color: var(--text-secondary); /* Texto da timeline secundário claro */
 }
 
 .resume-text {
-  background: #ffffff;
+  background: var(--bg-secundary); /* Fundo secundário escuro */
   padding: 20px;
   margin-bottom: 40px;
-  border-left: 4px solid #4e73df;
+  border-left: 4px solid var(--blue-color); /* Borda azul */
+  color: var(--text-secondary); /* Texto do resumo claro */
 }
 
 .resume-text p {
@@ -584,23 +603,24 @@ ul li.active a::after {
 }
 
 .job-card {
-  background: #ffffff;
+  background: var(--bg-secundary); /* Fundo secundário escuro */
   padding: 16px 20px;
-  border-left: 4px solid #4e73df;
+  border-left: 4px solid var(--blue-color); /* Borda azul */
 }
 
 .job-card h3 {
   font-size: 1rem;
   margin-bottom: 4px;
+  color: var(--text-primary); /* Título do cargo claro */
 }
 
 .job-card p {
   font-size: 0.9rem;
-  color: #666;
+  color: var(--text-secondary); /* Texto do cargo secundário claro */
 }
 .card-job {
   margin-top: 30px;
-  background: #fff;
+  background: var(--bg-secundary); /* Fundo secundário escuro */
   border-radius: 20px;
   padding: 30px;
   transition: all 0.3s ease;
@@ -616,7 +636,7 @@ ul li.active a::after {
 }
 
 .card {
-  background: #fff;
+  background: var(--bg-secundary); /* Fundo secundário escuro */
   border-radius: 20px;
   padding: 30px;
   transition: all 0.3s ease;
@@ -636,10 +656,11 @@ ul li.active a::after {
   font-size: 1.8rem;
   font-weight: 400;
   margin-bottom: 0.8rem;
+  color: var(--text-primary); /* Título do card claro */
 }
 
 .card-desc {
-  color: #333;
+  color: var(--text-secondary); /* Descrição do card secundário claro */
   font-size: 0.95rem;
   line-height: 1.5;
 }
@@ -647,7 +668,7 @@ ul li.active a::after {
 /* Estilos para os contatos */
 .wrapper {
   margin: 50px auto;
-  background-color: #fff;
+  background-color: var(--bg-secundary); /* Fundo secundário escuro */
   border-radius: 20px;
   overflow: hidden;
 }
@@ -669,16 +690,17 @@ ul li.active a::after {
   font-size: 2.5rem;
   font-weight: bold;
   margin-bottom: 10px;
+  color: var(--text-primary); /* Título da área de texto claro */
 }
 
 .text-area h1 span {
-  color: #2563eb; /* Azul */
+  color: var(--blue-color); /* Azul */
 }
 
 .text-area p {
   margin: 20px 0;
   font-size: 1rem;
-  color: #333;
+  color: var(--text-secondary); /* Texto da área de texto secundário claro */
 }
 
 .btn {
@@ -712,13 +734,13 @@ ul li.active a::after {
   justify-content: flex-end;
   align-items: center;
   padding: 20px 40px;
-  border-top: 1px solid #eee;
-  background-color: var(--blue-color);
+  border-top: 1px solid #333333; /* Borda do footer escura */
+  background-color: var(--bg-dark); /* Fundo do footer escuro */
   gap: 16px;
 }
 
 .footer a {
-  color: var(--bg-secundary);
+  color: var(--text-primary); /* Ícones do footer claros */
   font-size: 1.8rem;
   margin-left: 12px;
   text-decoration: none;
@@ -727,7 +749,7 @@ ul li.active a::after {
 
 .footer a:hover {
   cursor: pointer;
-  color: var(--bg-secundary);
+  color: var(--blue-color); /* Hover azul */
 }
 
 /* Responsivo */
@@ -750,4 +772,44 @@ ul li.active a::after {
     justify-content: center;
     flex-wrap: wrap;
   }
+}
+
+.experience {
+  padding: 20px 20px;
+  margin: 0 auto;
+  font-family: 'Inter', sans-serif;
+  background-color: var(--bg-secundary); /* Fundo da seção de experiência escuro */
+  border-radius: 20px;
+}
+
+.experience h2 {
+  font-size: 28px;
+  margin-bottom: 10px;
+  color: var(--text-primary); /* Título da experiência claro */
+  color: var(--blue-color);
+}
+
+.job {
+  display: flex;
+  flex-direction: column;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1); /* Borda sutil */
+  padding: 20px 0;
+}
+
+.job-title {
+  font-size: 20px;
+  font-weight: 500;
+  margin-bottom: 10px;
+  color: var(--text-primary); /* Título do cargo claro */
+}
+
+.job-meta {
+  display: flex;
+  justify-content: space-between;
+  font-size: 14px;
+  color: var(--text-secondary); /* Meta informações do cargo secundárias claras */
+}
+
+.fab{
+  color: #fff
 }
