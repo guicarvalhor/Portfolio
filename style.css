@@ -468,24 +468,24 @@ ul li.active a::after {
     height: 100vh;
     position: absolute;
     top: 0px;
-    background-color: var(--bg-dark); /* Fundo do menu mobile escuro */
+    background-color: var(--bg); /* Fundo do menu mobile escuro */
     z-index: 999;
   }
 
   .nav-menu a {
-    color: var(--text-primary); /* Links do menu mobile claros */
+    color: var(--bg-dark); /* Links do menu mobile claros */
     font-size: 26px;
   }
 
   .nav-menu.active {
     display: flex !important;
-    border-radius: 10px;
     /* Mostrar o menu quando ativo */
   }
 
   .nav-menu li {
     margin: 2rem;
     text-align: left;
+    color: var(--bg-dark);
   }
 
   .curriculo-button {
