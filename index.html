@@ -275,15 +275,33 @@
   </div>
 
 
-    <footer>
-      <p class="footer-credits">Criado com ❤️ por Guilherme Rodrigues - 2025</p>
-    </footer>
+   
+<footer>
+  <p class="footer-credits">Criado com ❤️ por Guilherme Rodrigues - 2025</p>
+</footer>
 
-    <!-- JS do AOS -->
+<!-- JS do AOS -->
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 <script>
   AOS.init();
 </script>
-</body>
+
+<!-- JS do Lenis -->
+<script src="https://unpkg.com/@studio-freight/lenis"></script>
+<script>
+  const lenis = new Lenis({
+    duration: 1.2,
+    smooth: true,
+    smoothTouch: false
+  })
+
+  function raf(time) {
+    lenis.raf(time)
+    requestAnimationFrame(raf)
+  }
+  requestAnimationFrame(raf)
+</script>
+
 <script src="script.js"></script>
+</body>
 </html>
