@@ -73,3 +73,4 @@ function toggleMenu() {
     const clone = item.cloneNode(true);
     track.appendChild(clone);
   });
+  
