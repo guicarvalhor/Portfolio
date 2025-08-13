@@ -286,22 +286,6 @@
   AOS.init();
 </script>
 
-<!-- JS do Lenis -->
-<script src="https://unpkg.com/@studio-freight/lenis"></script>
-<script>
-  const lenis = new Lenis({
-    duration: 1.2,
-    smooth: true,
-    smoothTouch: false
-  })
-
-  function raf(time) {
-    lenis.raf(time)
-    requestAnimationFrame(raf)
-  }
-  requestAnimationFrame(raf)
-</script>
-
 <script src="script.js"></script>
 </body>
 </html>
