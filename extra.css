@@ -5,7 +5,7 @@
 .container {
     max-width: 1200px;
     margin: 0 auto;
-    padding: 40px 20px;
+    padding: 30px 20px;
 }
 
 /* --- Cabeçalho do Projeto --- */
@@ -246,7 +246,11 @@
 
     .project-meta {
         display: grid;
-        grid-template-columns: repeat(1, 1fr);}
+        grid-template-columns: repeat(1, 1fr);
+        text-align: center;
+        padding: 20px 10px;
+
+  }
 
     .project-overview {
         grid-template-columns: 1fr;
@@ -259,7 +263,7 @@
     details{
         display: flex;
         flex-direction: column;
-        align-items: flex-start;
+        
         padding: 10px 0;
     }
     .details-content ul{
@@ -267,6 +271,14 @@
         flex-direction: column;
         align-items: flex-start;
         padding: 10px 0;
+    }
+    .gallery-image{
+        width: 85%;
+        height: auto;
+        margin-bottom: 20px;
+    }
+    .container {
+        padding: 20px 10px;
     }
 }
 
